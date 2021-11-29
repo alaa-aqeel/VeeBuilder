@@ -1,0 +1,18 @@
+[
+    {
+        "placeholder": "العنوان",
+        "class": "w-full",
+        "name": "title",
+        "rules": "required"
+    },
+    {
+        "label": "المؤلف",
+        "class": "w-full",
+        "name": "writer",
+        "as": "input",
+        "rules": "required",
+        "veeAttrs":{
+
+        }
+    }
+]
