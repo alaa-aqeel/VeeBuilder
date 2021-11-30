@@ -1,10 +1,9 @@
 [
     {
-        "placeholder": "العasdfasنوان",
+        "placeholder": "Enter Email",
         "class": "w-full",
-        "name": "title",
-        "rules": "required",
-        "label": "Titel"
+        "name": "email",
+        "rules": "required|email"
     },
     {
         "placeholder": "Full Name",
@@ -12,5 +11,12 @@
         "name": "fullname",
         "rules": "required",
         "label": "Full Name"
+    },
+    {
+        "placeholder": "Select Avtar",
+        "class": "w-full",
+        "name": "avtar",
+        "rules": "required|image",
+        "type": "file" 
     }
 ]

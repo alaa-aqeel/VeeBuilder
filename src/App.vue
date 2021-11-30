@@ -1,6 +1,16 @@
 <template>
     <div >
-        <FormBuilder :schema="schema" show-errors>
+        <FormBuilder :schema="schema" show-errors @submit="submit">
+
+             <!-- inse -->
+            <template v-slot:title-input="{ handleChange, handleBlur, field }">
+                <input 
+                    @change="handleChange"
+                    @blur="handleBlur"
+                    :name="field.name" 
+                    type="text"
+                >
+            </template>
 
             <!-- Set default message error for fileds -->
             <template v-slot:message-error="{ message }">
@@ -18,6 +28,10 @@
                 <!-- </div> -->
             </template>
 
+
+            <button>
+                submit
+            </button>
         </FormBuilder>
     </div>
 </template>
@@ -33,5 +47,9 @@ import schema from './form.json';
 const FormBuilder = defineAsyncComponent(
     ()=> import('./components/FormBuilder.vue') 
 )
+
+const submit = values => {
+    console.log(values)
+}
 
 </script>

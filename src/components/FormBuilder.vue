@@ -40,7 +40,7 @@
                 :name="field.name"
                 :type="field.type"
                 :id="field.id"
-                :as="field.as || 'input'"
+                :as="field.as || $slots[`${field.name}-input`] ? field.as : 'input'"
                 :standalone="field.standalone"
                 :unchecked-value="field.uncheckedValue"
                 :value="field.value"
@@ -48,7 +48,10 @@
                 v-slot="slotPropsVeeField"
               >
                 <!-- v-slot  body field   -->
-                <slot :name='`${field.name}-input`' v-bind="slotPropsVeeField">
+                <slot 
+                  :name='`${field.name}-input`' 
+                  v-bind="{...slotPropsVeeField, schema: field}"
+                >
                     <!-- If tag select set options  -->
                     <template v-if="field.as == 'select'">
                         <option 
