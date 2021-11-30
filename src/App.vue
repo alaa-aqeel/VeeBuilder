@@ -1,24 +1,37 @@
 <template>
-    <div>
-        <builder-form :schema="FormJSON" show-errors>
-            <template v-slot:header="{ errors }">
-                {{ errors }}
+    <div >
+        <FormBuilder :schema="schema" show-errors>
+
+            <!-- Set default message error for fileds -->
+            <template v-slot:message-error="{ message }">
+                <div style="color:red">
+                    {{ message }}
+                </div>
             </template>
 
-            <template v-slot:title-input="{ handleBlur , handleChange }">
-                <input type="file" @change="handleChange" @blur="handleBlur">
+            <!-- Set default label for fileds -->
+            <template v-slot:label="{ field }">
+                <!-- <div style="color:red"> -->
+                    <label :for="field.name" style="padding: 10px; color: rgb(37, 37, 37);">
+                        {{ field.label }}
+                    </label>
+                <!-- </div> -->
             </template>
 
-            <button>
-                Submit
-            </button>
-        </builder-form>
+        </FormBuilder>
     </div>
 </template>
 
 
 <script setup>
-import BuilderForm from './components/Form.vue';
-import FormJSON from "./form.json"
+import { defineAsyncComponent } from '@vue/runtime-core';
+
+// import schema form
+import schema from './form.json';
+
+// Lazy load component
+const FormBuilder = defineAsyncComponent(
+    ()=> import('./components/FormBuilder.vue') 
+)
 
 </script>

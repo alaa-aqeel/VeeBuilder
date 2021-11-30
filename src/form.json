@@ -1,18 +1,16 @@
 [
     {
-        "placeholder": "العنوان",
+        "placeholder": "العasdfasنوان",
         "class": "w-full",
         "name": "title",
-        "rules": "required"
+        "rules": "required",
+        "label": "Titel"
     },
     {
-        "label": "المؤلف",
+        "placeholder": "Full Name",
         "class": "w-full",
-        "name": "writer",
-        "as": "input",
+        "name": "fullname",
         "rules": "required",
-        "veeAttrs":{
-
-        }
+        "label": "Full Name"
     }
 ]
