@@ -9,12 +9,12 @@
   "dependencies": {
     "@vee-validate/i18n": "^4.5.6",
     "@vee-validate/rules": "^4.5.6",
-    "vee-validate": "^4.5.6",
-    "vue": "^3.2.16"
+    "vee-validate": "^4.5.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
-    "vite": "^2.6.4"
+    "vite": "^2.6.4",
+    "vue": "^3.2.16"
   },
   "description": "## Install OR Download ^^ #### `$ git clone https://github.com/AlaaProg/BuilderForm-vue3.git ` #### `$ cd ./BuilderForm-vue3 ` #### `$ npm install`  #### `$ npm run dev`",
   "main": "vite.config.js",

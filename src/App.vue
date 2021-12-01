@@ -39,14 +39,11 @@
 
 <script setup>
 import { defineAsyncComponent } from '@vue/runtime-core';
+import { FormBuilder } from './plugins/FormBuilder';
 
 // import schema form
 import schema from './form.json';
 
-// Lazy load component
-const FormBuilder = defineAsyncComponent(
-    ()=> import('./components/FormBuilder.vue') 
-)
 
 const submit = values => {
     console.log(values)
