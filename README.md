@@ -1,8 +1,8 @@
 # FormBuilder with Vite+Vue3+VeeValidate
 
 ## Install OR Download ^^
-#### `$ git clone https://github.com/AlaaProg/BuilderForm-vue3.git `
-#### `$ cd ./BuilderForm-vue3 `
+#### `$ git clone https://github.com/AlaaProg/VeeBuilder.git `
+#### `$ cd ./VeeBuilder `
 #### `$ npm install` 
 #### `$ npm run dev` 
 

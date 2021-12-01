@@ -1,6 +1,6 @@
 {
-  "name": "vee-form-builder",
-  "version": "0.0.1",
+  "name": "vee-builder",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,11 +16,11 @@
     "vite": "^2.6.4",
     "vue": "^3.2.16"
   },
-  "description": "## Install OR Download ^^ #### `$ git clone https://github.com/AlaaProg/BuilderForm-vue3.git ` #### `$ cd ./BuilderForm-vue3 ` #### `$ npm install`  #### `$ npm run dev`",
+  "description": "## Install OR Download ^^ #### `$ git clone https://github.com/AlaaProg/VeeBuilder.git ` #### `$ cd ./VeeBuilder ` #### `$ npm install`  #### `$ npm run dev`",
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlaaProg/BuilderForm-vue3.git"
+    "url": "git+https://github.com/AlaaProg/VeeBuilder.git"
   },
   "keywords": [
     "formbuilder",
@@ -31,7 +31,7 @@
   "author": "alaaProg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlaaProg/BuilderForm-vue3/issues"
+    "url": "https://github.com/AlaaProg/VeeBuilder/issues"
   },
-  "homepage": "https://github.com/AlaaProg/BuilderForm-vue3#readme"
+  "homepage": "https://github.com/AlaaProg/VeeBuilder#readme"
 }
