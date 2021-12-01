@@ -39,7 +39,7 @@
 
 <script setup>
 import { defineAsyncComponent } from '@vue/runtime-core';
-import { FormBuilder } from './plugins/FormBuilder';
+import { FormBuilder } from './plugins/VeeBuilder';
 
 // import schema form
 import schema from './form.json';

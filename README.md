@@ -8,6 +8,20 @@
 
 # Usage
 
+### Init 
+[i18n](https://vee-validate.logaretm.com/v4/guide/i18n#using-vee-validatei18n)
+```js
+import VeeBuilder from "./plugins/FormBuilder"
+import en from '@vee-validate/i18n/dist/locale/en.json';
+
+app.use(VeeBuilder, locale={
+    en: {
+        ...en 
+    },
+})
+
+```
+
 ### Simple
 ```html  
 <templat>
@@ -24,14 +38,11 @@
 
 <script setup>
 import { defineAsyncComponent } from 'vue';
+import { FormBuilder } from './plugins/FormBuilder';
 
 // import schema form
 import schema from './form.json';
 
-// Lazy load component
-const FormBuilder = defineAsyncComponent(
-    ()=> import('./components/FormBuilder.vue') 
-)
 
 </script>
 ```
