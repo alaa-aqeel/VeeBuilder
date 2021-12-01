@@ -1,6 +1,7 @@
-# FormBuilder with Vite+Vue3+VeeValidate
+# Form Builder with Vite+Vue3+VeeValidate
+VeeBuilder is a comprehensive form builder for `Vue3` with `VeeValidate`  that makes form development a breeze.
 
-## Install OR Download ^^
+## Download ^^
 #### `$ git clone https://github.com/AlaaProg/VeeBuilder.git `
 #### `$ cd ./VeeBuilder `
 #### `$ npm install` 
